@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE comanda SYSTEM "dtd_ex2.2.dtd">
+
+<comanda>
+    <tractor>
+        <component fabricant="BMW" fragil="true">
+            <data_entrega dia="12" mes="07" any="2022"/>
+            <pes unitat="quilos">30</pes>
+            <nombre_serie>30495746HF</nombre_serie>
+            <km_maxims>150000</km_maxims>
+        </component>
+        <component fabricant="Lamborghini" fragil="false">
+            <data_entrega dia="19" mes="02" any="2023"/>
+            <pes unitat="quilos">100</pes>
+            <nombre_serie>306573936LF</nombre_serie>
+        </component>
+    </tractor>
+</comanda>

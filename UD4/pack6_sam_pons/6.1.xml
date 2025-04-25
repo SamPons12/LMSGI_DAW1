@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empleats xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+xs:noNamespaceSchemaLocation="6.1.xsd">
+    <empleat id="E001" nom="Joan Pérez">
+        <dataIniciContracte>
+            <dia>---10</dia>
+            <mes>--02</mes>
+            <any>2015</any>
+        </dataIniciContracte>
+        <llocActual>Enginyer de Software</llocActual>
+        <llocsAnteriors>
+            <lloc>Analista</lloc>
+        </llocsAnteriors>
+        <cap>E003</cap>
+        <sou>45000.50</sou>
+        <titolsAcademics>
+            <titol>Enginyeria Informàtica</titol>
+        </titolsAcademics>
+        <seu>Barcelona</seu>
+        <observacions>
+            <merits>Projecte destacat en 2020</merits>
+        </observacions>
+    </empleat>
+
+    <empleat id="E002" nom="Maria López">
+        <dataIniciContracte>
+            <dia>---15</dia>
+            <mes>--06</mes>
+            <any>2018</any>
+        </dataIniciContracte>
+        <llocActual>Recursos Humans</llocActual>
+        <cap>E003</cap>
+        <sou>38000.75</sou>
+        <seu>Madrid</seu>
+    </empleat>
+
+    <empleat id="E003" nom="Carles Sánchez">
+        <dataIniciContracte>
+            <dia>---01</dia>
+            <mes>--03</mes>
+            <any>2010</any>
+        </dataIniciContracte>
+        <llocActual>Director</llocActual>
+        <cap>E005</cap>
+        <sou>75000.00</sou>
+        <titolsAcademics>
+            <titol>MBA</titol>
+            <titol>Enginyeria Industrial</titol>
+        </titolsAcademics>
+        <seu>València</seu>
+        <observacions>
+            <merits>Bon lideratge</merits>
+        </observacions>
+    </empleat>
+
+    <empleat id="E004" nom="Laura Martínez">
+        <dataIniciContracte>
+            <dia>---20</dia>
+            <mes>--09</mes>
+            <any>2021</any>
+        </dataIniciContracte>
+        <llocActual>Analista de Dades</llocActual>
+        <cap>E003</cap>
+        <sou>42000.30</sou>
+        <titolsAcademics>
+            <titol>Matemàtiques</titol>
+        </titolsAcademics>
+        <seu>Barcelona</seu>
+        <observacions>
+            <merits>Iniciativa en projectes</merits>
+        </observacions>
+    </empleat>
+
+    <empleat id="E005" nom="Pere Gómez">
+        <dataIniciContracte>
+            <dia>---05</dia>
+            <mes>--11</mes>
+            <any>2005</any>
+        </dataIniciContracte>
+        <llocActual>CEO</llocActual>
+        <cap>E001</cap>
+        <sou>100000.00</sou>
+        <titolsAcademics>
+            <titol>Economia</titol>
+            <titol>Administració d'Empreses</titol>
+        </titolsAcademics>
+        <seu>Madrid</seu>
+    </empleat>
+</empleats>

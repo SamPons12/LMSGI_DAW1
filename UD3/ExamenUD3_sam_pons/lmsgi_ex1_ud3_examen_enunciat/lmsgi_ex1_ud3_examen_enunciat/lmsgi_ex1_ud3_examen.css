@@ -1,0 +1,182 @@
+:root{
+  --red: hsl(14, 86%, 42%);
+  --green: hsl(159, 69%, 38%);
+  --rose-50: hsl(20, 50%, 98%);
+  --rose-100: hsl(13, 31%, 94%);
+  --rose-300: hsl(14, 25%, 72%);
+  --rose-400: hsl(7, 20%, 60%);
+  --rose-500: hsl(12, 20%, 44%);
+  --rose-900: hsl(14, 65%, 9%);  
+}
+
+@font-face {
+  font-family: RedHat;
+  src: url('./assets/fonts/RedHatText-VariableFont_wght.ttf');
+}
+
+/* Reset bàsic */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: RedHat;
+  font-size: 16px;
+  background-color: var(--rose-50);
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h1, h3 {
+  color: var(--rose-900);
+}
+
+h2 {
+  color: var(--red);
+  font-size: 1.5em;
+}
+
+section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+article{
+  border: none;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+
+article img{
+  max-width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+  border-radius: 8px;
+}
+
+
+img.selected{
+  border: solid 2px var(--red);
+} 
+
+article button{
+  background-color: white;
+  color: var(--rose-900);
+  font-weight: 500;
+  text-align: center;
+  padding: 10px 20px;
+  border: 1px solid var(--rose-500);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: absolute;
+  bottom: 73px;
+  align-self: center;
+}
+
+article button:hover{
+  background-color: var(--red);
+  color: white;
+  border-color: var(--red);
+}
+
+h6{
+  color: var(--rose-500);
+  font-size: 0.9em;
+  margin-top: 20px;
+}
+
+h4{
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--rose-900);
+}
+
+
+h5{
+  font-weight: 700;
+  color: var(--red);
+}  
+
+aside{
+  border: none;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+
+.element-cart{
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+
+.element-cart span:nth-child(1){
+  font-size: 0.9em;
+  color: var(--red);
+  font-weight: 500;
+}
+
+
+.element-cart p{
+  font-size: 0.9em;
+  color: var(--rose-500);
+  margin-left: 10px;
+}
+
+
+.element-cart p span:nth-child(2){
+  font-weight: 500;
+  color: var(--rose-500);
+}
+
+.line-cart{
+  padding: 10px 0;
+  color: var(--rose-900);
+}
+
+.line-cart span{
+  font-weight: bold;
+}
+
+.carbon-neutral{
+  background-color: var(--rose-50);
+  padding: 20px;
+  border-radius: 8px;
+}
+  
+.carbon-neutral span{
+  font-weight: 500;
+}
+
+
+aside button{
+  background-color: var(--red);
+  color: white;
+  border: 1px solid var(--red);
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: filter 0.3s ease;
+}
+
+
+aside button:hover{
+  background-color: color-mix(in srgb, var(--red) 90%, black 10%);
+}  

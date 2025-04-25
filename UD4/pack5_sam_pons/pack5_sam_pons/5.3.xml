@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subhasta xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+          xs:noNamespaceSchemaLocation="subhasta.xsd">
+    <objecte>
+        <propietari>Joan Ferrer</propietari>
+        <preu_sortida>500.00</preu_sortida>
+        <preu_minim>300.00</preu_minim>
+    </objecte>
+    <objecte>
+        <propietari>Maria Riera</propietari>
+        <preu_sortida>1200.50</preu_sortida>
+    </objecte>
+    <objecte>
+        <propietari>Pere Llabres</propietari>
+        <preu_sortida>750.00</preu_sortida>
+        <preu_minim>600.00</preu_minim>
+    </objecte>
+</subhasta>

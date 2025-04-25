@@ -1,0 +1,26 @@
+<!ELEMENT productes (futur+, divisa+, bono+, lletra+)>
+<!ELEMENT futur (producte, mercat?, (madrid | nova_york | frankfurt | toquio))>
+<!ELEMENT divisa (nom, canvi+, (madrid | nova_york | frankfurt | toquio))>
+<!ELEMENT bono (pais_de_procedencia, valor_desitjat, valor_minim, valor_maxim, (madrid | nova_york | frankfurt | toquio))>
+<!ELEMENT lletra (interes, emissor, (madrid | nova_york | frankfurt | toquio))>
+<!ELEMENT producte (#PCDATA)>
+<!ELEMENT mercat (#PCDATA)>
+<!ELEMENT madrid EMPTY>
+<!ELEMENT nova_york EMPTY>
+<!ELEMENT frankfurt EMPTY>
+<!ELEMENT toquio EMPTY>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT canvi (#PCDATA)>
+<!ELEMENT pais_de_procedencia (#PCDATA)>
+<!ELEMENT valor_desitjat (#PCDATA)>
+<!ELEMENT valor_minim (#PCDATA)>
+<!ELEMENT valor_maxim (#PCDATA)>
+<!ELEMENT interes (#PCDATA)>
+<!ELEMENT emissor (#PCDATA)>
+
+<!ATTLIST futur preu CDATA #REQUIRED>
+<!ATTLIST divisa preu CDATA #REQUIRED>
+<!ATTLIST divisa estable (si | no) #IMPLIED>
+<!ATTLIST bono preu CDATA #REQUIRED>
+<!ATTLIST bono estable (si | no) #IMPLIED>
+<!ATTLIST lletra preu CDATA #REQUIRED>

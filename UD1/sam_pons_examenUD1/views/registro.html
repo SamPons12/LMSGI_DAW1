@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>sam_pons_delfuente</title>
+	<link rel="stylesheet" href="./..\css\style.css">
+</head>
+<body>
+	<header>
+		<img src="./..\assets\img\logo.jpeg" alt="logo">
+		<h1>LMSGI - Examen UD1 - Inicio</h1>
+		<nav>
+			<a href="./..\sam_pons_delafuente.html">Inicio</a>
+			<a href="./informacion.html">Informacion</a>
+		</nav>
+	</header>
+	<main>
+		<h2>Registrarse</h2>
+		
+		<pre>
+Relllene los siguientes campos y tenga en cuenta que los campos que están marcados con un asterisco (*) son obligatorios.
+La contraseña debe contener por lo menos los siguientes caracteres:
+	- Alguna mayúscula
+	- Alguna minñuscula
+	- Algun número
+		</pre>
+		<form action="" method="get">
+			<p>
+				<label for="nombre">Nombre*:</label>
+				<input type="text" id="nombre" minlenght="3" maxlenght="35" required>
+			</p>
+			<p>
+				<label for="1apellido">Primer apellido*:</label>
+				<input type="text" id="1apellido" minlenght="3" maxlenght="35" required>
+				<label for="2apellido">Segundo apellido*:</label>
+				<input type="text" id="2apellido" minlenght="3" maxlenght="35">
+			</p>
+			<p>
+				<label for="email">Email*:</label>
+				<input type="email" id="email" required>
+			</p>
+			<p>
+				<label for="password">Contraseña*:</label>
+				<input type="password" id="password" required>
+				<label for="repassword">Repite contraseña*:</label>
+				<input type="repassword" id="repassword" required>
+			</p>
+			<p>
+				<label for="gen">Genero</label>
+				<input type="radio" id="mujer" required >
+				<label for="">Mujer</label>
+				<input type="radio" id="hombre" required >
+				<label for="">Hombre</label>
+				<input type="radio" id="binario" required>
+				<label for="">Binario</label>
+			</p>
+			<p>
+				<label for="tpvia">Tipo de vía*:</label>
+				<select name="via" id="tpvia" required>
+            				<option value="calle">Calle</option>
+            				<option value="avenida">Avenida</option>
+            				<option value="plaza">Plaza</option>
+        			</select>
+        			<label for="via">Nombre de Vía*:</label>
+        			<input type="text" id="via" maxlenght="30" required>
+			</p>
+			<p>
+				<label for="numero">Número:</label>
+				<input type="number" id="numero">
+				<label for="otra">Otra información (puerta,piso...):</label>
+				<input type="text" id="otra">
+			</p>
+			<p>
+				<label for="postal">Código Postal*:</label>
+				<input type="number" id="postal" maxlenght="5" required>
+				<label for="poblacion">Población*:</label>
+				<input list="pobl" name="address" id="poblacion" required>
+       				<datalist id="pobl" required>
+            				<option value="Ciutadella"></option>
+            				<option value="Ferreries"></option>
+            				<option value="Mercadal"></option>
+            				<option value="Alaior"></option>
+            				<option value="Mao"></option>
+        			</datalist>
+			</p>
+			<p>
+				<textarea cols="100" rows="10" placeholder="Introduce otra información de interés aquí..."></textarea>
+			</p>
+			<p>
+				<input type="checkbox" required>
+				<label>Acepto las condiciones</label>
+			</p>
+			<p>
+				<input type="submit" value="Registrarse">
+			</p>
+		</form>
+		<hr>
+		<ul>
+			<li><a href="https://www.facebook.com/" target="._blank">Facebook</a></li>
+			<li><a href="https://www.x.com/" target="._blank">X</a></li>
+			<li><a href="https://www.instagram.com/" target="._blank">Instagram</a></li>
+			<li><a href="https://www.linkedin.com/" target="._blank">LinkedIn</a></li>
+		</ul>	
+	</main> 
+</body>
+</html>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE factura SYSTEM "factura.dtd">
+
+<factura>
+  <capcalera id="DER">
+    <data dia="04" mes="04" any="2024"/>
+    <client nom_fiscal="Joan Marques"  nif="41749829E"/>
+    <proveidor nom_fiscal="Pere Moll" nif="4375423Z"/>
+  </capcalera>
+
+  <liniea id="A" article_ref="Z">
+    <article id="Z" tipus_iva="21">
+      <descripcio>botella de  agua</descripcio>
+      <preu_no_iva>1</preu_no_iva>
+      <preu_iva>2</preu_iva>
+    </article>
+    <numero_unitats>10</numero_unitats>
+    <import_total>10</import_total>
+  </liniea>
+
+    <liniea id="B" article_ref="S">
+    <article id="S" tipus_iva="21">
+      <descripcio>botella de nestea</descripcio>
+      <preu_no_iva>2</preu_no_iva>
+      <preu_iva>4</preu_iva>
+    </article>
+    <numero_unitats>10</numero_unitats>
+    <import_total>20</import_total>
+  </liniea>
+
+    <liniea id="C" article_ref="V">
+    <article id="V" tipus_iva="21">
+      <descripcio>botella de  fanta</descripcio>
+      <preu_no_iva>1.5</preu_no_iva>
+      <preu_iva>2.5</preu_iva>
+    </article>
+    <numero_unitats>5</numero_unitats>
+    <import_total>7.5</import_total>
+  </liniea>
+
+  <total>
+    <subtotal_4>0</subtotal_4>
+    <subtotal_10>0</subtotal_10>
+    <subtotal_21></subtotal_21>
+    <total_no_iva>25</total_no_iva>
+    <total_iva>37.5</total_iva>  
+  </total>
+
+</factura>

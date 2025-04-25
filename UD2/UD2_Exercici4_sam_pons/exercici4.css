@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-color: #1e2019;
+  color: #d3d0cb;
+  text-align: center;
+}
+
+img{
+  width: 10%;
+}
+
+header{
+  text-align: center;
+  background-color: #d3d0cb;
+}
+
+header>nav>a{
+  text-decoration: none;
+  color: #1e2019;
+  padding: 10px;
+  margin-bottom: ;
+}  
+
+nav>a:hover{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.red{
+  color: rgb(250, 185, 185);
+}
+
+form{
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 1px;
+  width: 45%;
+  display: inline-block;
+  padding: 5px;
+}
+
+form p{
+  padding: 8px;
+}
+
+input[type="checkbox"]:checked{
+  accent-color: grey;
+}
+
+input[type="text"], input[type="email"]{
+  width: 30%;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+  outline: none;
+  box-shadow: 0px 0px 0px 3px rgba(255, 255, 0, 0.288);
+}
+
+input[type="radio"]:checked{
+  accent-color: grey;
+}
+
+input[type="submit"]{
+  background-color: rgb(201, 201, 6);
+  width: 75px;
+  height: 28px;
+  border-radius: 4px;
+}
+
+h1{
+  padding: 20px;
+}
+
+div>p>a{
+  color: #d3d0cb;
+}

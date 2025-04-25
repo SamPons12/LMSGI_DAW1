@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE arxiu [
+    <!ELEMENT arxiu (operacions+)>
+    <!ELEMENT operacions (venda | compra)+>
+    <!ELEMENT venda (titol+, quantitat, lliurat?, import)>
+    <!ELEMENT titol (#PCDATA)>
+    <!ELEMENT quantitat (#PCDATA)>
+    <!ELEMENT lliurat (#PCDATA)>
+    <!ELEMENT import (#PCDATA)>
+    <!ELEMENT compra (titol+, proveïdor, data_compra)>
+    <!ELEMENT proveïdor (#PCDATA)>
+    <!ELEMENT data_compra (dia, mes, any)>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT any (#PCDATA)>
+
+    <!ATTLIST lliurat boolean (true | false) #IMPLIED>
+    <!ATTLIST import moneda CDATA #REQUIRED>
+
+]>
+
+<arxiu>
+    <operacions>
+        <venda>
+            <titol>El arte de tener la razón</titol>
+            <titol>El libro de sofia</titol>
+            <quantitat>2</quantitat>
+            <lliurat boolean="true"/>
+            <import moneda="Euro">16.56</import>
+        </venda>
+        <venda>
+            <titol>El guardian entre el centeno</titol>
+            <titol>Codigo limpio</titol>
+            <quantitat>2</quantitat>
+            <lliurat boolean="false"/>
+            <import moneda="Euro">14.00</import>
+        </venda>
+        <compra>
+            <titol>Luces de bohemia</titol>
+            <proveïdor>CapCom</proveïdor>
+            <data_compra>
+                <dia>26</dia>
+                <mes>05</mes>
+                <any>2023</any>
+            </data_compra>
+        </compra>
+    </operacions>
+    
+    <operacions>
+        <venda>
+            <titol>El arte de tener la razón</titol>
+            <titol>El libro de sofia</titol>
+            <quantitat>2</quantitat>
+            <lliurat boolean="true"/>
+            <import moneda="Euro">16.56</import>
+        </venda>
+        <venda>
+            <titol>El guardian entre el centeno</titol>
+            <titol>Codigo limpio</titol>
+            <quantitat>2</quantitat>
+            <lliurat boolean="false"/>
+            <import moneda="Euro">14.00</import>
+        </venda>
+        <compra>
+            <titol>Luces de bohemia</titol>
+            <proveïdor>CapCom</proveïdor>
+            <data_compra>
+                <dia>26</dia>
+                <mes>05</mes>
+                <any>2023</any>
+            </data_compra>
+        </compra>
+        <compra>
+            <titol>Luces de bohemia</titol>
+            <proveïdor>CapCom</proveïdor>
+            <data_compra>
+                <dia>26</dia>
+                <mes>05</mes>
+                <any>2023</any>
+            </data_compra>
+        </compra>
+    </operacions>
+
+    <operacions>
+        <venda>
+            <titol>El arte de tener la razón</titol>
+            <titol>El libro de sofia</titol>
+            <quantitat>2</quantitat>
+            <lliurat boolean="true"/>
+            <import moneda="Euro">16.56</import>
+        </venda>
+    </operacions>
+
+    <operacions>
+     <compra>
+            <titol>Luces de bohemia</titol>
+            <proveïdor>CapCom</proveïdor>
+            <data_compra>
+                <dia>26</dia>
+                <mes>05</mes>
+                <any>2023</any>
+            </data_compra>
+        </compra>
+    </operacions>
+</arxiu>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE productes SYSTEM "dtd_ex3.4.dtd">
+
+<productes>
+    <futur preu="20000">
+        <producte>Accio X</producte>
+        <mercat>Alemanya</mercat>
+        <madrid></madrid>
+    </futur>
+    
+    <futur preu="20000">
+        <producte>Accio X</producte>
+        <mercat>Alemanya</mercat>
+        <madrid></madrid>
+    </futur>
+
+
+    <divisa preu="200" estable="si">
+        <nom>Divisa X</nom>
+        <canvi>Dolar</canvi>
+        <toquio></toquio>
+    </divisa>
+
+    <divisa preu="200" >
+        <nom>Divisa X</nom>
+        <canvi>Dolar</canvi>
+        <canvi>Yen</canvi>
+        <toquio></toquio>
+    </divisa>
+
+    <bono preu="1000" estable="no">
+        <pais_de_procedencia>Alemnya</pais_de_procedencia>
+        <valor_desitjat>100</valor_desitjat>
+        <valor_minim>50</valor_minim>
+        <valor_maxim>200</valor_maxim>
+        <frankfurt></frankfurt>
+    </bono>
+
+    <lletra preu="30">
+        <interes>2.5</interes>
+        <emissor>USA</emissor>
+        <nova_york></nova_york>
+    </lletra>
+</productes>

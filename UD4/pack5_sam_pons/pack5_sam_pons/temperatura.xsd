@@ -1,0 +1,54 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="registre_temperatura">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="provincia" type="xs:string"></xs:element>
+                <xs:element name="data" type="xs:date"></xs:element>
+                <xs:element name="temperatura_minima" type="temperaturaMinimaType"></xs:element>
+                <xs:element name="temperatura_maxima" type="temperaturaMaximaType"></xs:element>
+                <xs:element name="incidencies">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="incidencia" maxOccurs="unbounded" >
+                                <xs:complexType>
+                                    <xs:attribute name="nom" type="nomType" use="required"></xs:attribute>
+                                    <xs:attribute name="severitat" type="severitatType" use="required"></xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Restricions-->
+    <xs:simpleType name="temperaturaMinimaType">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="-50"></xs:minInclusive>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="temperaturaMaximaType">
+        <xs:restriction base="xs:int">
+            <xs:maxInclusive value="50"></xs:maxInclusive>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="nomType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="fred"></xs:enumeration>
+            <xs:enumeration value="neu"></xs:enumeration>
+            <xs:enumeration value="pluja"></xs:enumeration>
+            <xs:enumeration value="calor"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="severitatType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="alta"></xs:enumeration>
+            <xs:enumeration value="mitja"></xs:enumeration>
+            <xs:enumeration value="baixa"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

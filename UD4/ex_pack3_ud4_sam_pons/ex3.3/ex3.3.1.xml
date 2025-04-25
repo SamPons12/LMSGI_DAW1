@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE demanat SYSTEM "dtd_ex3.3.dtd">
+
+<demanat>
+    <llibre titol="Quijote"></llibre>
+    <quadern num_fulles="100"></quadern>
+    <llapis>
+        <numero>5</numero>
+    </llapis>
+</demanat>

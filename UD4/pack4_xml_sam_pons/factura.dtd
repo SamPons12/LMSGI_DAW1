@@ -1,0 +1,36 @@
+<!ELEMENT factura (capcalera, liniea+, total)>
+  <!ELEMENT capcalera (data, client, proveidor)>
+    <!ELEMENT data EMPTY>
+    <!ELEMENT client EMPTY>
+    <!ELEMENT proveidor EMPTY>
+  <!ELEMENT liniea (article, numero_unitats, import_total)>
+    <!ELEMENT article (descripcio, preu_no_iva, preu_iva)>
+      <!ELEMENT descripcio (#PCDATA)>
+      <!ELEMENT preu_no_iva (#PCDATA)>
+      <!ELEMENT preu_iva (#PCDATA)>
+    <!ELEMENT numero_unitats (#PCDATA)>
+    <!ELEMENT import_total (#PCDATA)>
+  <!ELEMENT total (subtotal_4, subtotal_10, subtotal_21, total_no_iva, total_iva)>
+    <!ELEMENT subtotal_4 (#PCDATA)>
+    <!ELEMENT subtotal_10 (#PCDATA)>
+    <!ELEMENT subtotal_21 (#PCDATA)>
+    <!ELEMENT total_no_iva (#PCDATA)>
+    <!ELEMENT total_iva (#PCDATA)>
+
+<!ATTLIST capcalera id ID #REQUIRED>
+<!ATTLIST data dia CDATA #REQUIRED>
+<!ATTLIST data mes CDATA #REQUIRED>
+<!ATTLIST data any CDATA #REQUIRED>
+
+<!ATTLIST client nom_fiscal CDATA #REQUIRED>
+<!ATTLIST client nom_comercial CDATA #IMPLIED>
+<!ATTLIST client nif CDATA #REQUIRED>
+<!ATTLIST proveidor nom_fiscal CDATA #REQUIRED>
+<!ATTLIST proveidor nom_comercial CDATA #IMPLIED>
+<!ATTLIST proveidor nif CDATA #REQUIRED>
+
+<!ATTLIST liniea id ID #REQUIRED>
+<!ATTLIST liniea article_ref IDREF #REQUIRED>
+
+<!ATTLIST article id ID #REQUIRED>
+<!ATTLIST article tipus_iva (4 | 10 | 21) #REQUIRED>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE factura SYSTEM "factura.dtd">
+
+<factura>
+  <capcalera id="DER">
+    <data dia="04" mes="04" any="2024"/>
+    <client nom_fiscal="Joan Marques" nom_comercial="Joan S.L." nif="41749829E"/>
+    <proveidor nom_fiscal="Pere Moll" nif="4375423Z"/>
+  </capcalera>
+
+  <liniea id="A" article_ref="Z">
+    <article id="Z" tipus_iva="21">
+      <descripcio>botella de agua</descripcio>
+      <preu_no_iva>1</preu_no_iva>
+      <preu_iva>2</preu_iva>
+    </article>
+    <numero_unitats>10</numero_unitats>
+    <import_total>10</import_total>
+  </liniea>
+
+  <total>
+    <subtotal_4>0</subtotal_4>
+    <subtotal_10>0</subtotal_10>
+    <subtotal_21>20</subtotal_21>
+    <total_no_iva>10</total_no_iva>
+    <total_iva>20</total_iva>  
+  </total>
+
+</factura>

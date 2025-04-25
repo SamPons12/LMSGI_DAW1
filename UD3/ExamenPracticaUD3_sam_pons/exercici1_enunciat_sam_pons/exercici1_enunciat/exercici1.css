@@ -1,0 +1,180 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  text-decoration: none;
+}
+
+body {
+  color: #252323;
+  background-color: #FEF9FF;
+  height: 100vh;
+}
+
+header {  
+  color:#CAD178;
+  height: 70px;
+  background-color: #434960;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo-square {
+  height: 80px;
+  display: none;
+}
+
+.logo-landscape {
+  height: 25px;  
+}
+
+.menu-item {
+  margin: 0 10px;  
+}
+
+.menu-item span{
+  display: none;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+}
+
+.nav-primary .menu-item:hover {
+  text-decoration: underline;
+}
+
+.nav-primary{
+  display: none;
+}
+
+.nav-logo{
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-icons{
+  display: flex;
+  flex-direction: row;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.products-container{
+  display: flex;
+  flex-direction: column;
+  order: 2;
+  padding: 0 35px;
+}
+
+aside {
+  padding: 10px;
+  background-color: #CAD178;
+}
+
+aside nav{
+  display: flex;
+  flex-direction: column;
+  order: 1;
+
+}
+
+a {
+  padding: 10px 0;
+  color: #252323;
+}
+
+a:hover {
+  font-weight: bold;  
+}
+
+.item {
+  padding: 100px;
+  margin: 10px;
+  background-color: #95818D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+@media (min-width: 768px){
+
+  .nav-logo{
+    align-items: center;
+  }
+
+  .logo-square{
+    display: initial;
+    height:60px;
+  }
+
+  .logo-landscape{
+    display: none;
+  }
+
+  .menu-item span{
+    display: initial;
+  }
+  
+  .products-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    height: 100%;
+  }
+
+  .item{
+    width: 30%;
+  }
+}
+
+@media (min-width: 992px){
+  
+
+  .nav-primary{
+    display: initial;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .fa-bars{
+    display: none;
+  }
+
+  main{
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .products-container{
+    align-items: center;
+}
+
+  .item{
+    width: 15%;
+    height: 200px;
+  }
+
+  aside{
+    width: 10%;
+    height: 100%;
+  }
+
+  aside nav{
+    height: 100%;
+    justify-content: end;
+  }
+}

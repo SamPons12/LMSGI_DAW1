@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari-Ex8</title>
+</head>
+<style>
+    .red{
+    color: #BF0000;
+    }
+    </style>
+<body>
+    <h1>Formulari de registre</h1>
+<form action="" method="get">
+    <p>
+        <label for="nom">Nom:<span class="red">*</class></label>
+        <input type="text" id="nom" name="nom" minlength="2" maxlength="30">
+    </p>
+    <p>
+        <label for="cognom1">Primer cognom:<span class="red">*</class></label>
+        <input type="text" name="cognom1" id="cognom1" maxlength="50">
+    </p>
+    <p>
+        <label for="cognom2">Segon cognom:<span class="red">*</class></label>
+        <input type="text" name="cognom2" id="cognom2" maxlength="50">
+    </p>
+    <p>
+        <label for="">Gènere:<span class="red">*</class></label>
+        <input type="radio" name="genero" id="dona" value="dona">
+        <label for="dona">Dona</label>
+        <input type="radio" name="genero" id="home" value="home">
+        <label for="home">Home</label>
+        <input type="radio" name="genero" id="binari" value="binari">
+        <label for="binari">No binari</label>
+    </p>
+    <p>
+        <label for="email">Email:<span class="red">*</class></label>
+        <input type="email" name="email" id="email" maxlength="100">
+    </p>
+    <p>
+        <label for="descr">Descripció</label>
+    </p>
+    <p>
+        <textarea cols="40" rows="7" id="descr" name="descr" placeholder="Entra una descripció amb un màxim de 300 caràcters..."></textarea>
+    </p>
+    <hr>
+    <p>
+        <h3>Consentiment</h3>
+        <input type="checkbox" name="cons1" id="cons1" checked>
+        <label for="cons2">Vull rebre informació amb les darreres novetats i ofertes personalitzades</label>
+    </p>
+    <p>    
+        <input type="checkbox" name="cons2" id="cons2">
+        <label for="cons2">Declar haver llegit i acceptar <a href="#condicions">condicions generals</a> de l'aplicació i la normativa sobre protecció de dades personals</label>
+    </p>
+    <p>
+        <input type="submit" value="Envia">
+    </p>
+</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2 id="condicions">Condicions generals</h2>
+<p><strong>Identificació del tractament:</strong> Nom i LLinatges.</p>
+<p><strong>Responsable del tractament:</strong> Empresa S.L.</p>
+<p><strong>Finalitat del tractament:</strong> Gestionar els diferents enviaments d'informació derivats del registre de l'usuari.</p>
+<p><strong>Legitimació:</strong> Consentiment de la persona interesada.</p>
+<p><strong>Persones destinatàries:</strong> Les encarregades del tractamnet que proveeixen, per copte de l'empresa. Les dades no es comunicaran a altres categories de destinataris, excepte en els casos previstos per la llei.</p>
+<p><strong>Drets de les persones interesades:</strong> Sol·licitar l'accés, rectificació o supressió de les dades, i la limitació o oposició al tractamnet. Cal utilitzar els formularis i el procediment disponibles.</p>
+</body>
+</html>

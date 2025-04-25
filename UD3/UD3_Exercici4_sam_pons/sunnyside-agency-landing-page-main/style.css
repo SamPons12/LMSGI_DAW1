@@ -1,0 +1,315 @@
+/*Common styles*/
+@font-face {
+    font-family: Barlow;
+    src: url("fonts/Barlow/Barlow-Medium.ttf");
+  }
+  
+  @font-face {
+    font-family: Fraunces;
+    src: url("fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+  }
+  
+  :root{
+    /*Primary colours*/
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-desaturated-cyan: hsl(167, 40%, 24%); /*graphic design text*/
+    --dark-blue: hsl(198, 62%, 26%); /*photography text*/
+    --dark-moderate-cyan: hsl(168, 34%, 41%); /*footer*/
+    --cyan: #90d4c5;
+  
+    /*Neutral colours*/
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 18px;
+    height: 100vH;
+    font-family: Barlow;
+  }
+
+  h1, h2{
+    font-family: Fraunces;
+    text-align: center;
+    font-weight: 800;
+  }
+  
+  h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding: 50px 0;
+    font-size: 2rem;
+  }
+
+  h2{
+    font-size: 1.6rem;
+  }
+
+  h3{
+    font-family: Fraunces;
+    font-weight: 900;
+  }
+
+  h4{
+    font-family: Barlow;
+    font-size: 0.8rem;
+    color: var(--cyan);
+  }
+
+  p{
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.5rem;
+  }
+  
+  .bg-image {
+    background-size: cover;
+  }
+  
+  /*Mobile styles*/
+  /*Header*/
+  header {
+    background-image: url("images/mobile/image-header.jpg");
+    height: 70%;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: relative;
+  }
+  
+  header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+  }
+
+  header nav{
+    display: none;
+  }
+  
+  header section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #mobile-menu-btn:hover{
+    cursor: pointer;
+  }
+
+  #nav-menu.nav-visible{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 270px;
+    width: 300px;
+    top: 20%;
+    left: 70px;
+    right: 0;
+    padding: 15px;
+    background-color: var(--white);
+    
+  }
+
+  
+  #nav-menu button{
+    margin: 15px;
+    border-style: none;
+    background-color: var(--white);
+    font-family: Barlow;
+    font-weight: 800;
+    color: var(--dark-grayish-blue);
+  }
+
+  #nav-menu button{
+    cursor: pointer;
+  }
+
+  #nav-menu button:last-child{
+    margin-top: 30px;
+    text-transform: uppercase;
+    background-color: var(--yellow);
+    padding: 15px;
+    font-family: Fraunces;
+    font-weight: 800;
+    color: var(--dark-blue);
+    border-radius: 30px;
+  }
+
+  img[alt*="arrow"] {
+    width: fit-content;
+  }
+
+  /*Main*/
+  main section.transform{
+    background-image: url(images/mobile/image-transform.jpg);
+  }
+
+  main section.stand-out{
+    background-image: url(images/mobile/image-stand-out.jpg);
+  }
+  
+  main section.transform, main section.stand-out{
+    height: 280px;
+  }
+
+  main section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 45px 30px;
+    text-align: center;
+  }
+
+  .main-section-info, .main-section-info button{  
+    color: var(--very-dark-desaturated-blue);
+  }
+
+  .main-section-info p{
+    color: var(--very-dark-grayish-blue);
+  }
+
+  .main-section-info button{
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-family: Fraunces;
+    font-weight: 800;
+    font-size: 1rem;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .main-section-info button::after{
+    content: '';
+    background-color: var(--soft-red);
+    position: absolute;
+    bottom: 0;
+    left: -2px;
+    right: 2px;
+    height: 5px;
+    width: 100%;
+    opacity: 0.5;
+    border-radius: 0.5em;
+    z-index: -1;
+  }
+
+  main section.transform + section button::after{
+    background-color: var(--yellow);
+  }
+
+  main section.stand-out + section button::after{
+    background-color: var(--soft-red);
+  }
+
+  .main-section-info button:hover::after{
+    opacity: 1;
+  }
+
+  .photography, .graphic-design{
+    height: 750px;
+    display: flex;
+    justify-content: end;
+    color: var(--dark-desaturated-cyan);
+  }
+
+  .graphic-design{
+    background-image: url(./images/mobile/image-graphic-design.jpg);
+  }
+
+  .photography{
+    background-image: url(./images/desktop/image-photography.jpg);
+    background-position: center;
+    background-repeat: no-repeat
+  }
+
+  .clients-testimonials img{
+    width: 80px;
+    border-radius: 350px;
+  }
+
+  .clients-testimonials{
+    display: flex;
+    gap: 80px;
+  }
+
+  .clients-testimonials p{
+    padding-top: 25px;
+    align-content: start;
+    color: var(--very-dark-grayish-blue);
+  }
+
+  .clients-testimonials h2{
+    text-transform: uppercase;
+  }
+
+  .clients-testimonials h3{
+    padding-top: 30px;
+    font-size: 1rem;
+  }
+
+  .clients-testimonials h4{
+    padding-top: 15px;
+    color: var(--grayish-blue);
+  }
+
+  .collage-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    padding: 0px;
+    text-align: start;
+  }
+
+  .collage-images img{
+    width: 100%;
+  }
+
+  /*Footer*/
+  footer {
+    background-color: var(--cyan);
+    color: var(--dark-desaturated-cyan);
+    padding: 45px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .footer-logo {
+    background-color: var(--dark-desaturated-cyan);
+    mask: url("./images/logo.svg") no-repeat center;
+    -webkit-mask: url("./images/logo.svg") no-repeat center; /* Compatibilidad con Safari */
+    height: 25px;
+    width: 100%; /*És nececessari especificar un ample concret*/
+  }
+  
+  footer div {
+    display: flex;
+    gap: 30px;
+  }
+  
+  footer span:hover, footer img:hover {
+    cursor: pointer;
+    color: var(--white);
+  }
+  
+  /*Desktop styles*/
+  @media (min-width: 1000px){
+
+    
+   
+  } 

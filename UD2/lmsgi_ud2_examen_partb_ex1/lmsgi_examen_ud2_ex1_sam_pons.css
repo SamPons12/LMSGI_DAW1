@@ -1,0 +1,103 @@
+:root{
+  --color1: #f7f7f7;
+  --color2: #333;
+  --color3: #575757;
+  --color4: #549F93;
+  --color5: #549f9322;
+}
+
+@font-face {
+  font-family: "Comforta";
+  src: url(./assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Comforta";
+}
+
+header{
+  position: sticky;
+  top: 0;
+  text-align: center;
+  background-color: var(--color4);
+}
+
+header h1{
+  color: var(--color1);
+  padding: 12px 0;
+}
+
+header nav{
+  background-color: var(--color2);
+}
+
+header nav ul li{
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+
+}
+
+header nav ul li:hover{
+  background-color: var(--color3);
+}
+
+nav a{
+  text-decoration: none;
+  color: var(--color1);
+}
+
+main{
+  text-align: center;
+}
+
+.post{
+  background-color: var(--color5);
+  border: var(--color4) solid 2px;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+}
+
+.post h2{
+  color: var(--color4);
+  padding: 10px 0;
+}
+
+.post h2:hover{
+  cursor: pointer;
+}
+
+.post h2+p{
+  padding: 10px;
+}
+
+.post img{
+  border: var(--color3) solid 1px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.post p+p{
+  text-align: left;
+}
+
+.post img:hover{
+  cursor: pointer;
+  background-color: var(--color5);
+}
+
+footer{
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+  background-color: var(--color4);
+}
+
+footer p{
+  color: var(--color1);
+  padding: 19px 0;
+}

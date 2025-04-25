@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE entrega [
+    <!ELEMENT entrega (lot+)>
+    <!ELEMENT lot (palet+)>
+    <!ELEMENT palet (nombre_caixes, contingut, pes, forma_manipulacio)>
+    <!ELEMENT nombre_caixes (#PCDATA)>
+    <!ELEMENT contingut (nom, procedencia*, numero_serie, pes, unitat?)>
+    <!ELEMENT nom (#PCDATA)>
+    <!ELEMENT procedencia (#PCDATA)>
+    <!ELEMENT numero_serie (#PCDATA)>
+    <!ELEMENT unitat (#PCDATA)>
+    <!ELEMENT pes (#PCDATA)>
+    <!ELEMENT forma_manipulacio (#PCDATA)>
+]>
+<entrega>
+    <lot>
+        <palet>
+            <nombre_caixes>4</nombre_caixes>
+            <contingut>
+                <nom>Impressora</nom>
+                <procedencia>Espanya</procedencia>
+                <numero_serie>456432423KJ</numero_serie>
+                <pes>1</pes>
+                <unitat>quilo</unitat>
+            </contingut>
+            <pes>4Kg</pes>
+            <forma_manipulacio>Fragil</forma_manipulacio>
+        </palet>
+        <palet>
+            <nombre_caixes>2</nombre_caixes>
+            <contingut>
+                <nom>CPU</nom>
+                <procedencia>Taiwan</procedencia>
+                <numero_serie>3842034HG</numero_serie>
+                <pes >200</pes>
+            </contingut>
+            <pes>400Gr</pes>
+            <forma_manipulacio>Fragil</forma_manipulacio>
+        </palet>
+    </lot>
+    <lot>
+        <palet>
+            <nombre_caixes>1</nombre_caixes>
+            <contingut>
+                <nom>Servidor</nom>
+                <numero_serie>456432423KJ</numero_serie>
+                <pes>1</pes>
+                <unitat>quilo</unitat>
+            </contingut>
+            <pes>1KG</pes>
+            <forma_manipulacio>Fragil</forma_manipulacio>
+        </palet>
+    </lot>
+</entrega>

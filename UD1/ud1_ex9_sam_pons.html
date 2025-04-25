@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari d'inscripció a la cursa XYZ</title>
+</head>
+<style>
+    .red{
+    color: #BF0000;
+    }
+    </style>
+<body>
+    <h1>Formulari de registre</h1>
+<form action="" method="get">
+    <p>
+        <label for="nom">Nom:<span class="red">*</span></label>
+        <input type="text" id="nom" name="nom" minlength="2" maxlength="30" required>
+    </p>
+    <p>
+        <label for="cognom1">Primer cognom:<span class="red">*</span></label>
+        <input type="text" name="cognom1" id="cognom1" maxlength="50" required>
+    </p>
+    <p>
+        <label for="dni">DNI:<span class="red">*</span></label>
+        <input type="text" name="dni" id="dni" minlength="9" maxlength="9" required>
+    </p>
+    <p>
+        <label for="telef">Telèfon:<span class="red">*</span></label>
+        <input type="text" name="telef" id="telef" maxlength="100" required>
+    </p>
+    <p>
+        <label for="dat_naix">Data de Naixament:<span class="red">*</span></label>
+        <input type="date" name="dat_naix" id="datnaix" required>
+     </p>
+     <p>
+        <label for="">Gènere:<span class="red">*</span></label>
+        <input type="radio" name="genero" id="dona" value="dona" required>
+        <label for="dona">Dona</label>
+        <input type="radio" name="genero" id="home" value="home">
+        <label for="home">Home</label>
+        <input type="radio" name="genero" id="binari" value="binari">
+        <label for="binari">No binari</label>
+    </p>
+    <p>
+        <label for="address">Adreça:<span class="red">*</span></label>
+        <input list="addr" name="address" id="" required>
+        <datalist id="addr">
+            <option value="Carrer"></option>
+            <option value="Avinguda"></option>
+            <option value="Rambla"></option>
+            <option value="Carretera"></option>
+            <option value="Ronda"></option>
+            <option value="Autopista"></option>
+            <option value="Cami"></option>
+        </datalist>
+        <input type="text" name="address" id="address" required>
+        <label for="numero">Nº</label>
+        <input type="text" name="numero" id="numero" required>
+    </p>
+    <p>
+        <label for="poblacio">Població:<span class="red">*</span></label>
+        <select name="poblacio" id="poblacio" required>
+            <option value="ciutadella">Ciutadella</option>
+            <option value="ferreries">Ferreries</option>
+            <option value="mercadal">Mercadal</option>
+            <option value="alaior">Alaior</option>
+            <option value="Maho">Maho</option>
+            <option value="escastell">Es Castell</option>
+            <option value="santlluis">Sant Lluís</option>
+            <option value="altres">Altres</option>
+        </select>
+    </p>
+    <p>
+        <label for="codipost">Codi Postal:</label>
+        <input type="text" name="codipostal" id="postal" maxlength="5">
+    </p>
+    <p>
+        <label for="club">Club</label>
+    </p>
+    <p>
+        <textarea name="club" id="club"></textarea>
+    </p>
+    <p>
+        <label for="talla">Talla Samarreta:<span class="red">*</span></label>
+        <select name="talla" id="talla" required>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+        </select>
+    </p>
+    <hr>
+    <h1>DADES DE LA CURSA</h1>
+    <p>
+        <label for="cursa">Circuit (verd, blau o vermell):<span class="red">*</span></label>
+    </p>
+    <p>    
+        <input type="radio" name="cursa" id="curs" value="Verd">
+        <label for="Verd">Verd</label>
+        <input type="radio" name="cursa" id="curs" value="blau">
+        <label for="Verd">Blau</label>
+        <input type="radio" name="cursa" id="curs" value="Vermell">
+        <label for="Verd">Vermell</label>
+    </p>  
+    <p>
+        <label for="coment">Comentaris:</label>
+    </p>
+    <p>
+        <textarea name="coment" id="coment"></textarea>
+    </p>
+    <hr>
+    <p>
+        <input type="checkbox" name="politica" id="politica" required>
+        <label for="politica">Accepto i assumeixo les normes de participació que regulen la Cursa Popular Ciutat de XYZ.<span class="red">*</span></label>
+    <p>    
+        <input type="checkbox" name="politica" id="politica" required>  
+        <label for="politica">Que estic interessat/da en rebre informació sobre les activitats esportives organitzades per l’Ajuntament i dono el meu consentiment per a la tramesa d’informació al respecte.<span class="red">*</span></label> 
+    </p>
+    <input type="submit" value="Enviar">
+</body>
+</html>

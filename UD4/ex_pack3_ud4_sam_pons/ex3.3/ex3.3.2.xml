@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE demanat SYSTEM "dtd_ex3.3.dtd">
+
+<demanat>
+    <llibre titol="Quijote"></llibre>
+    <llibre titol="2"></llibre>
+    <llibre titol="3"></llibre>
+    <llibre titol="4"></llibre>
+    <llapis>
+        <numero>3</numero>
+    </llapis>
+    <llapis>
+        <numero>5</numero>
+    </llapis>
+    <llibre titol="5"></llibre>
+    <llibre titol="6"></llibre>
+</demanat>

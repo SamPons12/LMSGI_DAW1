@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE llistacursos [
+    <!ELEMENT llistacursos (curs+)>
+    <!ELEMENT curs (alumne+)>
+    <!ELEMENT alumne (dni, nom, cognom, segon_cognom?, llista_assignatures)>
+    <!ELEMENT dni (#PCDATA)>
+    <!ELEMENT nom (#PCDATA)>
+    <!ELEMENT cognom (#PCDATA)>
+    <!ELEMENT segon_cognom (#PCDATA)>
+    <!ELEMENT llista_assignatures (assignatura+)>
+    <!ELEMENT assignatura (nom, professor)>
+    <!ELEMENT nrp (#PCDATA)>
+    <!ELEMENT professor (nrp, nom, cognom, segon_cognom?)>
+
+    <!ATTLIST assignatura codi ID #REQUIRED>
+]>
+<llistacursos>
+    <curs>
+        <alumne>
+            <dni>2348753D</dni>
+            <nom>Iker</nom>
+            <cognom>Aguado</cognom>
+            <llista_assignatures>
+                <assignatura codi="MT">
+                    <nom>Mates</nom>
+                    <professor>
+                        <nrp>2343HG</nrp>
+                        <nom>Toni</nom>
+                        <cognom>Moll</cognom>
+                    </professor>
+                </assignatura>
+                <assignatura codi="CA">
+                    <nom>Catala</nom>
+                    <professor>
+                        <nrp>23423KN</nrp>
+                        <nom>Maria</nom>
+                        <cognom>Rincon</cognom>
+                    </professor>
+                </assignatura>
+            </llista_assignatures>
+        </alumne>
+        <alumne>
+            <dni>23948542J</dni>
+            <nom>Pere</nom>
+            <cognom>Coll</cognom>
+            <segon_cognom>Pons</segon_cognom>
+            <llista_assignatures>
+                <assignatura codi="TEC">
+                    <nom>Tecnologia</nom>
+                    <professor>
+                        <nrp>6769LK</nrp>
+                        <nom>Juan</nom>
+                        <cognom>Marques</cognom>
+                    </professor>
+                </assignatura>
+            </llista_assignatures>
+        </alumne>
+    </curs>
+    <curs>
+        <alumne>
+            <dni>85685345L</dni>
+            <nom>Rafel</nom>
+            <cognom>Ameller</cognom>
+            <llista_assignatures>
+                <assignatura codi="CAST">
+                    <nom>Castella</nom>
+                    <professor>
+                        <nrp>6598WE</nrp>
+                        <nom>Josep</nom>
+                        <cognom>Izquierdo</cognom>
+                        <segon_cognom>de la Fuente</segon_cognom>
+                    </professor>
+                </assignatura>
+            </llista_assignatures>
+        </alumne>        
+    </curs>
+</llistacursos>

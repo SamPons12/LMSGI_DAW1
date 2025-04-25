@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>   <!-- Falta introduir el encoder UTF-8 -->
+<documento>
+    <p>
+    Mi Primer <destacar importancia="1">documento
+    XML</destacar>
+    </p>            <!-- Esta mal tancat la p amb un ], importancia supos que es un atribut li falte cometes -->
+    <p>Comienza con la etiqueta &lt;documento&gt;</p>       <!-- "documento" te un <, es una entidad i esta representar amb &lt; -->
+    <p>A continuacion colocamos un elemento sin
+    contenido</p>
+    <imagen fichero="imagen.gif"/>  <!-- Falta tancar l'etiqueta "imagen" -->
+</documento>
+<!-- Falta tabulacions en tot el xml -->
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>   <!-- Falta introduir el enconder UTF-8 -->
+<libros> 
+    <libro id="quijote">
+        <titulo>El Quijote</titulo>
+        <autor nombre="cervantes"/>   <!-- Esta duplicat el atribut, falten les cometes i no esta tancada la etiqueta -->
+        <descripcion>Es el mejor libro de cervantes.</descripcion>  <!-- Hi ha un <, hi ha que emliminar-ho -->
+    </libro>   <!-- Esta mal tancat -->
+</Libros>   <!-- Esta mal tancat, hi ha una majuscula -->
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>  <!-- Hi ha una majuscula a "Xml", te de anar en minuscules, a la versio hi ha una coma -->
+<triangulo base="7" altura="5"/>    <!-- No esta tancada la etiqueta i necesita una espai entre altura y la cometa -->
+<triangulo base="2" altura="6"/>    <!-- No esta tancada la etiqueta i necesita una espai entre altura y la cometa -->
+<triangulo base="3" altura="3"/>    <!-- No esta tancada la etiqueta i necesita una espai entre altura y la cometa -->
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<numeros>
+    <un letra="u" letra="n" letra="o">1</un>   <!-- No pot començar una etiqueta amb un nombre -->
+    <dos letra="d" letra="o" letra="s">22</dos>  <!-- No pot començar una etiqueta amb un nombre -->
+    <tres letra="s" letra="e" letra="i" letra="s">666666</tres>    <!-- No pot començar una etiqueta amb un nombre -->
+</numeros>

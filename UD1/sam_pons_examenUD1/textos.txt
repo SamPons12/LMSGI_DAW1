@@ -1,0 +1,28 @@
+LMSGI - Examen UD1 - Inicio
+Información
+Registro
+Detalles del Proyecto
+En este proyecto, es fundamental prestar atención a cada detalle para obtener un buen resultado. 
+El uso de HTML permite estructurar la información de manera ordenada. Recuerda que, sin usar hojas de estilo, el diseño puede verse algo básico.
+Fotografía
+El lenguaje HTML te permite incorporar imágenes que complementan el contenido, como esta foto que mostramos a continuación:
+Multimedia
+Además de imágenes, puedes insertar vídeos que aporten más información. A continuación, tienes un ejemplo de vídeo explicando el proyecto:
+Consideraciones importante
+Antes de finalizar, es importante que tengas en cuenta las siguientes pautas:
+Lee cuidadosamente las indicaciones y asegúrate de cumplir con todos los requisitos, ya que los errores pueden afectar la calificación final.
+Modifica el título de este documento para que muestre tu nombre tanto en la página como en la pestaña del navegador.
+¿Dónde exactamente?
+Debes cambiarlo en dos lugares:
+En el título visible dentro de la página HTML
+En el título que aparece en la pestaña del navegador
+Evita utilizar la etiqueta <br> para los saltos de línea, de lo contrario, no se corregirá el proyecto.
+¿Por qué no?
+Porque es considerado una mala práctica en HTML.
+En cada campo de los formularios, asegúrate de incluir un texto explicativo que indique qué información se debe introducir, y que al hacer clic, el campo obtenga el foco.
+Esto facilita la usabilidad del formulario.
+Volver al inicio
+Facebook
+X
+Instagram
+LinkedIn

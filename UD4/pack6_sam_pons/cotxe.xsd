@@ -1,0 +1,74 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="asseguranca_cotxe">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="asseguranca" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="asseguradora" type="xs:string"></xs:element>
+              <xs:element name="geocobertura" type="xs:string"></xs:element>
+              <xs:element name="cobrament">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="financament" type="xs:integer"></xs:element>
+                    <xs:element name="mensualitat" type="xs:decimal"></xs:element>
+                    <xs:element name="mensualitativa" type="xs:decimal"></xs:element>
+                    <xs:element name="anual" type="xs:integer"></xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="en" type="enType"></xs:attribute>
+                  <xs:attribute name="mensual" type="mensualType"></xs:attribute>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="promocions">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="descompteonline" minOccurs="0" maxOccurs="1"></xs:element>
+                    <xs:element name="descompteedat" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:attribute name="edat" type="edatType" use="required"></xs:attribute>
+                        <xs:attribute name="percentatge" type="percentatgeType" use="optional"></xs:attribute>
+                        <xs:attribute name="import" type="xs:int"></xs:attribute>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="nouclient" type="mensualType"></xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:integer" use="required"></xs:attribute>
+            <xs:attribute name="denominacio" type="xs:string"></xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Restriccioens-->
+
+  <xs:simpleType name="enType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Euro"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="mensualType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Si"></xs:enumeration>
+      <xs:enumeration value="No"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="edatType">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="16"></xs:minInclusive>
+      <xs:maxInclusive value="90"></xs:maxInclusive>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="percentatgeType">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="1"></xs:minInclusive>
+      <xs:maxInclusive value="80"></xs:maxInclusive>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
